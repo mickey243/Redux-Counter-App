@@ -14,6 +14,11 @@ const Reducer = (state = initialValues, action) => {
       counter: state.counter - 1,
     };
   }
+  if (action.type === "increse") {
+    return {
+      counter: state.counter + action.amount,
+    };
+  }
   return state;
 };
 

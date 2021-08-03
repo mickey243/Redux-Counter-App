@@ -11,24 +11,35 @@ function Welcome() {
   const decrementHandler = () => {
     dispatch({ type: "decrement" });
   };
+  const increseHandler = () => {
+    dispatch({ type: "increse", amount: 5 });
+  };
   return (
     <div className="Welcome">
+      <h1 className="Welcome__output">{counter}</h1>
       <Button
         variant="contained"
         color="secondary"
-        className="decrement"
+        className="decrement button"
         onClick={decrementHandler}
       >
         Decrement
       </Button>
-      <h1>{counter}</h1>
       <Button
         variant="contained"
         color="primary"
-        className="increment"
+        className="increment button"
         onClick={incrementHandler}
       >
         Increment
+      </Button>
+      <Button
+        variant="contained"
+        color="primary"
+        className="increment button"
+        onClick={increseHandler}
+      >
+        Increment By 5
       </Button>
     </div>
   );
