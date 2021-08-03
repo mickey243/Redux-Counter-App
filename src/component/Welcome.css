@@ -1,0 +1,14 @@
+.Welcome {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin-top: 10rem !important;
+}
+.decrement {
+  margin-left: 30rem !important;
+  margin-right: 10px !important;
+}
+.increment {
+  margin-left: 10px !important;
+}
